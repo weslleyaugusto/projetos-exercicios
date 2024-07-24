@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+*{
+    padding: 0%;
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #E9EBEE;
+}
+header{
+    background-color: ;
+    background-image: linear-gradient(to top,#3B5998,#4C67A1);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    align-items: end;
+}
+header h1{
+    margin-left: 270px;
+    color: rgb(242, 240, 240);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.494);
+    margin-bottom: 20px;
+}
+header a{
+    color: white;
+    background-color: #3fb228;
+    text-decoration: none;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+header a:hover{
+    background-color: #36A420;
+}
+.form-container{
+    background-color: #fff;
+    width: 600px;
+    margin: 70px auto;
+    padding: 30px 150px;
+    text-align: center;
+}
+.form-container input{
+    display: block;
+    width:  100%;
+    margin: 10px auto;
+    padding: 7px;
+    border: 1px solid #dbdbdb;
+}
+.text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-container input[type="submit"]{
+    background-color:#4267B2 ;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+}
+.form-container input[type="submit"]:hover{
+    background-color: #365899;
+    transition: .3s;
+    cursor: pointer;
+}
+.forgot-account a{
+    font-size: 12px;
+}
+.separator{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    font-size: 12px;
+    color: #9c9c9c;
+    margin: 20px 0px;
+}
+.separator .line{
+    height: 1px;
+    background-color: #dbdbdb;
+    width: 100%;
+}
+.create-account p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.create-account a[href=""]{
+    background-color: #3fb228;
+    padding: 15px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+.create-account a[href=""]:hover{
+    background-color: #36A420;
+    transition: .3s;
+}
+.links{
+    width: 60%;
+    margin: auto;
+}
+footer{
+    background-color: white;
+    padding: 70px 0px 5px 0px;
+    font-size: 12px;
+    color: #8A8D91;
+}
+.links ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.links li{
+    line-height: 3px;
+}
+footer .separator{
+    gap: 0px;
+}
+footer p{
+    margin: 30px 0px;
+}
+footer a:hover{
+    text-decoration: underline;
+}

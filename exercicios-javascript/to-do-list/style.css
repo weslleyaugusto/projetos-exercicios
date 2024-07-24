@@ -1,0 +1,150 @@
+/* geral */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+body,html{
+    background-image: url('img/background-image.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+button{
+    width: 35px;
+    height: 30px;
+    padding: .3em .6em;
+    border: 2px solid #102f5e ;
+    background-color: #fdfdfd;
+    color: #102f5e;
+    font-size: 1em;
+    cursor: pointer;
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button:hover{
+    background-color: #102f5e;
+    color: white;
+}
+button:hover > i{
+    color: white;
+}
+button i{
+    font-weight: bold;
+    color: #102f5e;
+    pointer-events: none;
+}
+#cancel-edit-btn{
+    width: auto;
+}
+input,select{
+    padding: 5px;
+}
+.hide{
+    display: none;
+}
+#to-do-container{
+    width: 450px;
+    margin: 1em auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+h1{
+    text-align: center;
+    padding: 0 1em .8em;
+    border-bottom: 1px solid #ccc;
+}
+/* todo form */
+#to-do-form, #edit-form{
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+    
+}
+#to-do-form label, #edit-form label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-control{
+    display: flex;
+}
+.form-control input{
+    margin-right: 5px;
+}
+#cancel-edit-btn{
+    margin-top: 15px;
+}
+/* toolbar */
+
+#toolbar{
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+#toolbar label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+#search{
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+    margin-right: 20px;
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+}
+#search form{
+    display: flex;
+}
+#search form input{
+    margin-right: 5px ;
+    width: 100%;
+}
+#filter{
+    display: flex;
+    flex-direction: column;
+    width: 34%;    
+}
+#search form input{
+    margin-right: 5px ;
+}
+/* to do list */
+.to-do{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    border-bottom:1px  solid #ccc;
+    transition: .4s;
+}
+.to-do h2{
+    font-size: 16px;
+    flex: 1;
+}
+.to-do button{
+    margin-left: 5px;
+}
+.done{
+    background-color: #395169;
+    display: flex;
+}
+.done h2{
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+}
+.add-error{
+    margin-left: 15px;
+    transition: .4s;
+    display: none;
+}

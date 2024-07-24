@@ -1,0 +1,165 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: #333;
+}
+body, html{
+    height: auto;
+    min-height: 100vh;
+}
+body{
+    background-image: linear-gradient(to bottom, rgba(234, 2, 255, 1), #0097ff);
+}
+input:focus{
+    outline: none;
+}
+#container{
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 32px auto;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, .25) 0px 13px 27px -5px, rgba(0, 0, 0, .3) 0px 8px 16px -8px;
+}
+#banner-container{
+    width: 50%;
+    background-image: url(bg-form.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#banner-layer{
+    background-color: rgba(25, 11, 122, .7);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2em;
+}
+#banner-layer h1{
+    color: whitesmoke;
+    word-spacing: 1000px;
+    font-size: 64px;
+}
+#form-container{
+    padding: 20px;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+#form-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+#form-container p{
+    margin-bottom: 1.5em;
+    font-size: 12px;
+    color: #6d6d6d;
+    text-align: center;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.form-control input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0px;
+}
+.form-control label{
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+#generate-password{
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+#generate-password:hover{
+    transition: .4s;
+    color: blue;
+}
+#password-container{
+    border: 1px solid #0099ff;
+    border-radius: 5px;
+    padding: .4em;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 1em 0px;
+}
+#password-container p{
+    color: #81d340;
+    font-size: .7em;
+}
+#password-container h3{
+    font-size: 1.5em;
+}
+#form-container #cadastro{
+    background-color: #81d340;
+    border: none;
+    padding: 1em;
+    opacity: .8;
+    border-radius: 32px;
+    color: #fff;
+    padding: 1em 1.4em;
+    cursor: pointer;
+    max-width: 150px;
+    align-self: end;
+}
+#form-container #cadastro:hover, #copy-password:hover{
+    opacity: 1;
+    transition: .4s;
+}
+#password-options{
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+#password-options .form-control{
+    display: flex;
+    flex-direction: row;
+}
+#password-options input[type="text"]{
+    max-width: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+#password-options label{
+    flex: 1;
+    font-size: 14px;
+}
+#create-password, #copy-password{
+    background-color: blue;
+    border: none;
+    padding: 1em;
+    opacity: .8;
+    border-radius: 32px;
+    color: #fff;
+    padding: 1em 1.4em;
+    cursor: pointer;
+    max-width: 150px;
+    align-self: center;
+    opacity: .8;
+}
+#copy-password{
+    background-color: #fff;
+    color: #81d240;
+    margin:.8em 0px ;
+    border: 2px solid #81d340;
+    padding: .8em 1em;
+}
+#create-password{
+    margin: 0 auto;
+    display: block;
+}
+#create-password:hover{
+    opacity: 1;
+    transition: .4s;
+}
+.hide{
+    display: none;
+}

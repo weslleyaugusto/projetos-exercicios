@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    padding-bottom: 3em;
+}
+h2, h1{
+    margin-bottom: 1.6em;
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+}
+#container{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#controls-container, #preview{
+    flex: 1;
+    padding: 2em;
+}
+.form-control{
+    display: flex;
+    padding-bottom: 1.2em;
+    margin-bottom: 1.2em;
+    border-bottom: 1px dashed #ccc;
+}
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: #555;
+}
+.range-input{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 369.5px;
+}
+input[type="range"]{
+    appearance: none;
+    width: 100%;
+    height: 24px;
+    background-color: #d3d3d3;
+    outline: none;
+    cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    background-color: #ffea00;
+}
+.reference-input{
+    display: flex;
+    align-items: end;
+    position: relative;
+    bottom: -3px;
+}
+.reference-input p{
+    margin-left: 4px;
+}
+.reference-input input[type="text"]{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-left: 1em;
+    background-color: rgb(red, green, blue);
+}
+#box{
+    height: 300px;
+    width: 100%;
+    background-color: #ffea00;
+}
+#generate-rule{
+    text-align: center;
+}
+#generate-rule p{
+    margin-bottom: .5em;
+}
+#rules-area{
+    background-color: #d3d3d3;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em 0;
+    border: 2px solid #a4a3a3;
+    transition: .4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#rules-area:hover{
+    background-color: #dfdfdf;
+    cursor: copy;
+}
+#copy-rules{
+    font-style: italic;
+    margin-top: 1em;
+}
+/* Novas funcionalidades */
+#color-value{
+    min-width: 100px;
+}
+#opacity-value{
+    width: 32px;
+}
+#inset-shadow{
+    align-self: start;
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 792px) {
+    #container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #box{
+        max-width: 80%;
+        margin: 60px auto;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #rules-area{
+        margin: 0 10%;
+    }
+}

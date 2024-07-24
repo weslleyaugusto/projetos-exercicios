@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(89, 34, 239);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    font-size: 1.3em;
+    text-align: center;
+    color: black;
+    color: white;
+}
+section{
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    width: 400px;
+    padding: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.474);
+}
+footer{
+    text-align: center;
+    font-size: 1.1em;
+    font-style: italic;
+    color: white;
+}
+input{
+    margin: 7px;
+}
+input[onclick="checar()"]{
+    margin-left: 0px;
+}fieldset{
+    border: none;
+    margin: 0%;
+    padding: 0%;
+}img{
+
+    display: block;
+    margin: auto;
+}#res{
+    margin-bottom: 15px;
+}p{
+    margin: 0px 0px 15px 0px;
+}

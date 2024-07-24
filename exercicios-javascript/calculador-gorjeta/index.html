@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de gorjeta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="tip-container">
+        <h1>Calculador de gorjeta</h1>
+        <form action="">
+            <div class="form-control">
+                <label id="count-label" for="count">$</label>
+                <input type="number" name="count" id="count">
+            </div>
+            <div class="form-control">
+                <label for="tip">Tip</label>
+                <input type="range" name="tip" id="tip" max="100" min="0">
+                <input type="text" name="reference" id="reference" value="50%">
+            </div>
+        </form>
+        <div id="results-container">
+            <h2>Resultados</h2>
+            <p id="tip-count">Total da gorjeta: <span></span></p>
+            <p id="total-count">Total com a gorjeta: <span></span></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+*{
+    padding: 0%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: rgb(221, 232, 235);
+}
+h1{
+    margin: 2em 0px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#review-container{
+    max-width: 500px;
+    background-color: white;
+    padding: 1.5em;
+    margin: 0 auto;
+    box-shadow: 5px 5px 15px rgb(100, 100, 100);
+}
+img{
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 5px -2px rgb(101, 196, 255)   ;
+}
+#image-container{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 1em;
+    letter-spacing: 3px;
+}
+#job{
+    margin: 5px 0 10px;
+    text-align: center;
+    color: rgb(73, 73, 252);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#review{
+    text-align: center;
+}
+#buttons-container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 12px 0px;
+}
+#buttons-container button{
+    border: none;
+    background-color: transparent;
+    transition: .4s;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+#buttons-container button:hover{
+    background-color: rgb(232, 232, 232);
+}
+.fas{
+    color: rgb(73, 73, 252);
+    font-size: 20px;
+}
+#random-button{
+    border: 2px solid blue;
+    padding: 5px 7px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(231, 245, 255);
+    color: blue;
+    opacity: .8;
+    transition: .4s;
+}
+#random-button:hover{
+    opacity: 1;
+    cursor: pointer;
+    background-color: rgb(213, 213, 213);
+}

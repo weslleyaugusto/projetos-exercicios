@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu carro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cadastre seu carro para vender mais rápido!</h1>
+    </header>
+    <section>
+        <div id="pai">
+            <p id="form-p">Formulário</p>
+        </div>
+        <h2>Venda fácil seu carro!</h2>
+        <p>Descreva as características e marque os opcionais que ele possui.</p>
+        <form action="register.php">
+            <fieldset class="gerais">
+                <label class="required" for="ianuncio">Título do anúncio: </label>
+                <input required type="text" name="anuncio" id="ianuncio" placeholder="Um título para anunciar seu carro" maxlength="40">
+    
+                <label class="required" for="ipreco">Preço: </label>
+                <input required type="number" name="preco" id="ipreco" placeholder="Defina o preço do veículo">
+    
+                <label for="idescription" class="required">Descrição: </label>
+                <textarea name="description" id="idescription" placeholder="Aqui você coloca detalhes do veículo, por exemplo, se ele tem algum arranhão ou amassado"></textarea>
+    
+                <label class="required" for="imarca">Marca: </label>
+                <input required type="text" name="Marca" id="imarca" placeholder="Digite a marca do veículo">
+    
+                <label class="required" for="imodelo">Modelo: </label>
+                <input type="text" name="Modelo" id="imodelo" required placeholder="Digite o modelo do veículo">
+    
+                <label class="required" for="ikm">Kilometragem: </label>
+                <input type="number" name="km" id="ikm" required placeholder="Kilometragem do veículo, caso seja 0 digite 0">
+    
+                <label class="required" for="idata">Data de compra: </label>
+                <input type="date" name="Data" id="idata">   
+            </fieldset>
+            
+            <fieldset class="cambio">
+                <legend>Câmbio:</legend>
+                <input type="radio" name="cambio" id="iauto">
+                <label for="iauto">Automatico</label>
+                <input type="radio" name="cambio" id="imanual">
+                <label for="imanual">Manual</label>
+            </fieldset>
+            
+
+            <fieldset>
+                <legend>Opcionais:</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="airbag" id="iairbag">
+                        <label for="iairbag">Airbag</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="alarme" id="ialarme">
+                        <label for="ialarme">alarme</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="camera" id="icamera">
+                        <label for="icamera">Câmera de ré</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="ar" id="iar">
+                        <label for="iar">Ar condicionado</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="assistente" id="iassistente">
+                        <label for="iassistente">assistente de pista</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="keyless" id="ikeyless">
+                        <label for="ikeyless">Partida keyless</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="integracao-celular" id="iintegracao-celular">
+                        <label for="iintegracao-celular">Integração com celular</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="banco-couro" id="ibanco-couro">
+                        <label for="ibanco-couro">Banco de couro</label>
+                    </li>
+                </ul>
+                    
+            </fieldset>
+            <label class="required" for="ifoto">Fotos do carro:</label>
+            <input type="file" name="fotos" id="ifoto" multiple accept="image/png , image/jpg , image/webp">
+
+            <fieldset id="final">
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>

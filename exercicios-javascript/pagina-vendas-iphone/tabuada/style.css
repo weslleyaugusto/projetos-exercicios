@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family:  Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to bottom, rgb(255, 0, 89), rgb(74, 0, 171));
+    height: 100vh;
+    text-align: center;
+    padding: 3em;
+    color: rgb(219, 219, 219);
+}
+h1{
+   margin-bottom: 20px;
+   font-size: 20px;
+}
+h2{
+    margin: 20px 0px; 
+    font-size: 20px;
+}
+#multiplication-form{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 300px;
+    margin: 1.5em auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.form-control input{
+    width: 30px;
+    height: 20px;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px 7px;
+    text-align: center;
+}
+input[type="submit"]{
+    padding: 5px 50px; 
+    background-color: rgb(45, 45, 45);
+    color: rgb(237, 235, 235);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+input[type="submit"]:hover{
+    background-color: rgb(69, 69, 69);
+    transition: .2s;
+}
+#error{
+    margin-top: 20px;
+}
+#multiplication-results{
+    background-color: #e0e0e0;
+    color: rgb(28, 28, 28);
+    padding: 16px;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+    max-width: 300px;
+}
+#multiplication-results p{
+    margin-bottom: 20px;
+}
+.row{
+    margin: 0px 20%;
+    padding: 5px;
+    border: 1px solid rgb(165, 165, 165);
+    border-bottom: none;
+}
+.row:last-child{
+    border-bottom: 1px solid rgb(165, 165, 165);
+}

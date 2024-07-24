@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modelo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Titulo</h1>
+  </header>
+
+  <section>
+    <div id="formulario">
+      <form action="cadastro.php">
+        <fieldset>
+          <label for="iano">Ano de nascimento: </label>
+          <input type="number" name="ano" id="iano" /><br />
+        </fieldset>
+
+        <fieldset>
+          <label for="sexo">Sexo: </label>
+
+          <input type="radio" name="sexo" id="imen" />
+          <label for="imen">Masculino</label>
+
+          <input type="radio" name="sexo" id="iwoman" />
+          <label for="iwoman">Feminino</label><br />
+        </fieldset>
+
+        <input type="button" value="Verificar" onclick="checar()" />
+      </form>
+    </div>
+    <div id="res">
+      <p id="centrar">preencha os dados acima para ver o resultado!</p>
+      </div>
+  </section>
+  <footer>
+    <p>&copy;Weslley Augusto</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

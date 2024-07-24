@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastre os produtos</h1>
+        <p>Preencha os dados do formulario abaixo para registrar um produto</p>
+    </header>
+    <form action="register.php">
+        <div>
+            <label for="tipo">Tipo do produto:</label>
+            <select name="tipo" required id="tipo">
+                <option value="clear">Limpeza</option>
+                <option value="food">Alimentício</option>
+                <option value="cosmetic">Cosmético</option>
+            </select>
+        </div>
+        <div>
+            <label for="nome">Nome do produto:</label>
+            <input type="text" required name="nome" id="nome">
+        </div>
+        <div>
+            <label for="fabricante">Fabricante:</label>
+            <input type="text" required name="fabricante" id="fabricante">
+        </div>
+        <div>
+            <label for="distribuidora">distribuidora:</label>
+            <input type="text" required name="distribuidora" id="distribuidora">
+        </div>
+        <div>
+            <label for="descricao">Descrição do produto:</label>
+            <textarea name="descricao" required id="descricao" placeholder="Digite aqui a descrição do produto como, para que serve, modo de usar, precauções, derivados e ingredientes"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>

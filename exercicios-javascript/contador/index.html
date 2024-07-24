@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1> 
+    </header>
+
+    <section>
+        
+        <form id="dados" action="cadastro.php">
+            <div>
+                <label for="iinicio">Inicio: </label>
+                <input type="number" name="Inicio" id="iinicio" placeholder="Numero para iniciar a contagem">
+            </div>
+            <div>
+                <label for="ifim">Fim: </label>
+                <input type="number" name="fim" id="ifim" placeholder="Numero para deefinir o fim da contagem">
+            </div>
+            <div>
+                <label for="ipasso">Passo: </label>
+                <input type="number" name="passo" id="ipasso" placeholder="Numero paara definir de quanto em quanto vai contar">
+            </div>
+        </form>
+        <input type="button" value="contar" onclick="contar()">
+        <div id="res">
+            Preparando a contagem...
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Weslley Augusto</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div id="form-container" class="active">
+            <h1>Calculadora de IMC</h1>
+            <form action="">
+                <label for="height">Altura:</label>
+                <input type="number" name="height" id="height" placeholder="Exemplo: 1,75">
+
+                <label for="weight">Peso:</label>
+                <input type="number" name="weight" id="weight" placeholder="Exemplo: 70,5">
+                
+                <div id="buttons-container">
+                    <button id="calc">Calcular</button>
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </div>
+        <div id="results-container">
+            <h1>Seu IMC: <span class="intensity" id="intensity-number">40.3</span></h1>
+            <h2>Situação atual: <span class="intensity" id="intensity-class">Obesidade grave</span></h2>
+
+            <table>
+                <thead>
+                    <caption>Confira as classificações</caption>
+                    <tr>
+                        <th>
+                            IMC
+                        </th>
+                        <th>
+                            Classificação
+                        </th>
+                        <th>
+                            Obesidade
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Menor que 18,5</td>
+                        <td>Magreza</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 18,5 e 24,9</td>
+                        <td>Normal</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 25,0 e 29,9</td>
+                        <td>Sobrepeso</td>
+                        <td>I</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 30,0 e 39,9</td>
+                        <td>Obesidade</td>
+                        <td>II</td>
+                    </tr>
+                    <tr>
+                        <td>Maior que 40,0</td>
+                        <td>Obesidade grave</td>
+                        <td>III</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="back">Voltar</button>
+        </div>
+    </div>
+</body>
+
+</html>

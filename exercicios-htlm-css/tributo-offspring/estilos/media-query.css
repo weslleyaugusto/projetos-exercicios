@@ -1,0 +1,24 @@
+@media screen and (min-width: 600px){
+    html{
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        width: 100%;
+        padding: 0%;
+    }
+    img{
+        display: block;
+        margin: 16px auto;
+        width: 100%;
+    }
+}
+@media screen and(min-width:992px) {
+    figure{
+        display: inline-block;
+        width: 770px;
+    }
+    img{
+        width: 770px;
+    }
+}

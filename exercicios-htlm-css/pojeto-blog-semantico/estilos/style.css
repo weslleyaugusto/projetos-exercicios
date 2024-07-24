@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    margin-top: 10px;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+a:hover{
+    color: rgb(43, 131, 255);
+}
+header nav{
+    padding: 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.container{
+    display: flex;
+    border-bottom: 1px solid #dbdbdb;
+}
+main{
+    padding: 40px;
+    flex: 3 1 0;
+    max-width: 1200px;
+}
+.post{
+    margin-bottom: 50px;
+}
+img{
+    width: 100%;
+}
+.post h2{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+article p{
+    margin-bottom: 20px;
+}
+.author{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#final-footer{
+    text-align: center;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+aside{
+    padding: 40px 40px 20px 20px;
+    flex: 1 1 0;
+}
+aside section{
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+aside h3{
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+.search form {
+    display: flex;
+}
+.search input{
+    border: 1px solid #ddd;
+    padding: 7px 14px;
+}
+.search input[type="submit"]{
+    background-color: #37a1f7;
+    color: white;
+    cursor: pointer;
+}
+.search input[type="submit"]:hover{
+    background-color: #2e88d2;
+    transition: .3s;
+}
+.categories nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tags .tags-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tags a{
+    background-color: #ddd;
+    padding: 5px;
+    border-radius: 3px;
+}
+@media screen and (max-width: 900px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    main{
+        flex: 2 1 0;
+        padding-bottom: 0px;
+    }
+    .post3{
+        margin-bottom: 0px;
+    }
+}

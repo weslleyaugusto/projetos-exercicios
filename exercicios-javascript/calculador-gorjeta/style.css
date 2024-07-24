@@ -1,0 +1,72 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+}
+#tip-container{
+    background-color: whitesmoke;
+    margin-top: 50px;
+    padding: 1em;
+    border-radius: 3px;
+}
+h1{
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+}
+#count-label{
+    padding: 8px;
+    background-color: #e6e6e6;
+    border: 1px solid #a8a8a8;
+}
+input[type="range"]{
+    width: 300px;
+    border: 1px solid #ccc;
+}
+.form-control{
+    display: flex;
+    margin: 1em 0;
+}
+#count{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+}
+#reference{
+    padding: 8px;
+    background-color: #e6e6e6;
+    border: 1px solid #a8a8a8;
+    width: 40px;
+    outline: none;
+}
+form{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+h2{
+    margin: 1em 0 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+#tip-count,#total-count{
+    background-color: #e6e6e6;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.292);
+    font-size: 14px;
+}
+#total-count{
+    margin-top: 15px;
+}
+#tip-count span,#total-count span{
+    border-left: 1px solid #787878;
+    margin-left: 3px;
+}

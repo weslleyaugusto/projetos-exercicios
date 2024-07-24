@@ -1,0 +1,109 @@
+@charset "UTF-8";
+*{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(248, 225, 255);
+    margin: 0;
+}
+header{
+    background-color: rgb(149, 43, 249);
+    height: 150px;
+    color: white;
+    border-bottom: 1px dashed blueviolet;
+}
+header h1{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px;
+    margin: 0;
+}
+#form-p{
+   text-decoration: 2px underline blueviolet;
+   text-align: center;
+   margin: 0 auto;
+   text-transform: uppercase;
+}
+section{
+    width: 67%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    top: -60px;
+}
+input{
+    border: none;
+    border-bottom: 1px dashed blueviolet;
+    display: block;
+}
+input[type="number"], input[type="text"], input[type="date"]{
+    width: 65%;
+}
+textarea{
+    border-bottom: 1px dashed blueviolet;
+    display: block;
+    width: 65%;
+    height: 70px;
+}
+label.required::after{
+    content: '*';
+    color: rgb(171, 0, 0);
+    font-size: 18px;
+}
+fieldset{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+div{
+    width: 50%;
+    display: inline;
+}
+label{
+    display: block;
+    margin: 12px 0px;
+}
+ul{
+    list-style: none;
+    columns: 2;
+    padding-left: 0px;
+    display: inline-block;
+}
+ul label,input{
+    display: inline-block;
+    margin: 3px;
+}
+input[type="file"]{
+    border: none;
+    margin-bottom: 20px;
+}
+input[type="submit"]{
+    border: none;
+    width: 150px;
+    height: 50px;
+    background-color: #9c5abd;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+input[type="submit"]:hover{
+    background-color: #7800ab;
+}
+.cambio label,input{
+    display: inline;
+    margin-top: 10px;
+}
+.cambio{
+    margin: 10px 10px 10px 0px;
+}
+#final{
+    display: block;
+
+}
+@media screen and (min-width:992px) {
+    section{
+        width: 500px;
+    }
+}
